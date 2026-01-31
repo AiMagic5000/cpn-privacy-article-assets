@@ -441,9 +441,14 @@ export const PrivacyHeroVideo: React.FC = () => {
       {/* CTA Button - appears near the end */}
       <CTAButton startFrame={1000} />
 
+      {/* Background music at 28% volume */}
+      <Sequence from={0}>
+        <Audio src={staticFile('background-music.mp3')} volume={0.28} />
+      </Sequence>
+
       {/* Audio track - 11Labs voiceover */}
       <Sequence from={0}>
-        <Audio src={staticFile('voiceover.mp3')} />
+        <Audio src={staticFile('voiceover.mp3')} volume={1} />
       </Sequence>
     </AbsoluteFill>
   );
