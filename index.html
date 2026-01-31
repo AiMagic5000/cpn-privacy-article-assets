@@ -69,28 +69,182 @@
     }
     </script>
 
-    <!-- Article Schema -->
+    <!-- Article Schema with Images and Video -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Why Privacy Matters: The Definitive Guide to Digital Privacy Protection",
-        "description": "Comprehensive 60,000+ word guide covering digital surveillance, credit privacy, identity protection, and actionable privacy strategies.",
+        "alternativeHeadline": "Complete 2026 Guide to Credit Privacy Files, Identity Protection, and Data Security",
+        "description": "Comprehensive 60,000+ word guide covering digital surveillance, credit privacy, identity protection, and actionable privacy strategies. Learn how to establish a Credit Privacy File registered with the IRS.",
         "author": {
             "@type": "Organization",
             "name": "CreditPrivacyNumber.com",
-            "url": "https://creditprivacynumber.com"
+            "url": "https://creditprivacynumber.com",
+            "logo": "https://creditprivacynumber.com/logo.png"
         },
         "publisher": {
             "@type": "Organization",
             "name": "CreditPrivacyNumber.com",
-            "url": "https://creditprivacynumber.com"
+            "url": "https://creditprivacynumber.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://creditprivacynumber.com/logo.png"
+            }
         },
         "datePublished": "2026-01-30",
         "dateModified": "2026-01-30",
-        "mainEntityOfPage": "https://creditprivacynumber.com/privacy-guide",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://creditprivacynumber.com/privacy-guide"
+        },
         "wordCount": "60000",
-        "articleSection": ["Digital Privacy", "Credit Privacy", "Identity Protection", "Data Security"]
+        "articleSection": ["Digital Privacy", "Credit Privacy", "Identity Protection", "Data Security", "Financial Privacy", "GDPR", "CCPA"],
+        "keywords": "credit privacy file, credit privacy number, digital privacy, identity theft protection, data broker opt out, GDPR rights, CCPA rights, VPN, password manager, credit freeze, IRS registered credit file",
+        "image": [
+            "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-01-intro.jpg",
+            "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-02-privacy.jpg",
+            "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-03-surveillance.jpg",
+            "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-04-corporate.jpg",
+            "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png"
+        ],
+        "video": {
+            "@type": "VideoObject",
+            "name": "Why Privacy Matters - Credit Privacy Guide Introduction",
+            "description": "45-second introduction explaining credit privacy files and how to protect your financial privacy with an IRS-registered alternative credit identity.",
+            "thumbnailUrl": "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/video-poster.png",
+            "contentUrl": "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/remotion-video/out/privacy-hero-v5.mp4",
+            "uploadDate": "2026-01-30",
+            "duration": "PT45S"
+        },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".opening-hook", "h2", "h3"]
+        },
+        "about": [
+            {"@type": "Thing", "name": "Digital Privacy"},
+            {"@type": "Thing", "name": "Credit Privacy"},
+            {"@type": "Thing", "name": "Identity Theft Protection"},
+            {"@type": "Thing", "name": "Data Broker Opt-Out"},
+            {"@type": "Thing", "name": "Financial Privacy"}
+        ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CreditPrivacyNumber.com",
+        "url": "https://creditprivacynumber.com",
+        "logo": "https://creditprivacynumber.com/logo.png",
+        "description": "Leading resource for credit privacy education and IRS-registered credit privacy files. Helping individuals establish legal financial privacy since 2020.",
+        "sameAs": [
+            "https://twitter.com/creditprivacy",
+            "https://facebook.com/creditprivacynumber"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://creditprivacynumber.com/contact"
+        }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creditprivacynumber.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Privacy Guide",
+                "item": "https://creditprivacynumber.com/privacy-guide"
+            }
+        ]
+    }
+    </script>
+
+    <!-- HowTo Schema for Privacy Protection -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Protect Your Digital Privacy in 2026",
+        "description": "Step-by-step guide to establishing comprehensive digital privacy protection including credit privacy files, data broker opt-outs, and identity protection.",
+        "totalTime": "PT2H",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "tool": [
+            {"@type": "HowToTool", "name": "Password Manager (1Password, Bitwarden)"},
+            {"@type": "HowToTool", "name": "VPN Service"},
+            {"@type": "HowToTool", "name": "Privacy-focused Browser (Firefox, Brave)"}
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Freeze Your Credit",
+                "text": "Place credit freezes with all three bureaus (Equifax, Experian, TransUnion) to prevent unauthorized accounts.",
+                "url": "https://creditprivacynumber.com/privacy-guide#section-9"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Use a Password Manager",
+                "text": "Install a reputable password manager and create unique, complex passwords for every account.",
+                "url": "https://creditprivacynumber.com/privacy-guide#section-10"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Enable Two-Factor Authentication",
+                "text": "Enable 2FA on all important accounts using authenticator apps instead of SMS.",
+                "url": "https://creditprivacynumber.com/privacy-guide#section-10"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Opt Out of Data Brokers",
+                "text": "Submit removal requests to major data brokers including Acxiom, Experian, LexisNexis, Spokeo, and WhitePages.",
+                "url": "https://creditprivacynumber.com/privacy-guide#section-3"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Consider a Credit Privacy File",
+                "text": "Establish a Credit Privacy File registered with the IRS for legal financial separation from your SSN credit profile.",
+                "url": "https://creditprivacynumber.com/privacy-guide"
+            }
+        ]
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Why Privacy Matters: Complete Digital Privacy Guide 2026",
+        "description": "The definitive 60,000+ word guide to digital privacy protection, credit privacy files, and identity security.",
+        "url": "https://creditprivacynumber.com/privacy-guide",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "CreditPrivacyNumber.com",
+            "url": "https://creditprivacynumber.com"
+        },
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-01-intro.jpg"
+        },
+        "specialty": "Privacy Protection and Credit Privacy Education"
     }
     </script>
     <style>
@@ -444,6 +598,14 @@
             box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
         }
 
+        .cta-box-image {
+            flex-shrink: 0;
+            width: 140px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
         .cta-box-content {
             flex: 1;
         }
@@ -522,6 +684,11 @@
                 flex-direction: column;
                 text-align: center;
                 padding: 1.2rem;
+            }
+
+            .cta-box-image {
+                width: 120px;
+                margin-bottom: 0.5rem;
             }
 
             .cta-button {
@@ -731,12 +898,21 @@
             <a href="https://creditprivacynumber.com/" target="_blank" rel="noopener">CreditPrivacyNumber.com</a>
         </div>
         <!-- Hero Video with Poster Image -->
-        <div style="position: relative; width: 100%; max-width: 1000px; margin: 2rem auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+        <div style="position: relative; width: 100%; max-width: 1000px; margin: 2rem auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.15);" itemscope itemtype="https://schema.org/VideoObject">
+            <meta itemprop="name" content="Why Privacy Matters - Credit Privacy Guide Introduction">
+            <meta itemprop="description" content="Learn how to protect your financial privacy with a Credit Privacy File registered with the IRS. This 45-second video explains how to establish legal standing in commerce separate from your SSN.">
+            <meta itemprop="uploadDate" content="2026-01-30">
+            <meta itemprop="duration" content="PT45S">
+            <meta itemprop="thumbnailUrl" content="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/video-poster.png">
+            <meta itemprop="contentUrl" content="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/remotion-video/out/privacy-hero-v5.mp4">
+            <link itemprop="embedUrl" href="https://creditprivacynumber.com/privacy-guide#video">
             <video
                 style="width: 100%; height: auto; display: block; border-radius: 20px;"
                 poster="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/video-poster.png"
                 controls
-                preload="metadata">
+                preload="metadata"
+                title="Why Privacy Matters - Credit Privacy Guide Video"
+                aria-label="Introduction video explaining credit privacy files and financial privacy protection">
                 <source src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/remotion-video/out/privacy-hero-v5.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -744,11 +920,12 @@
 
         <!-- CTA Box Under Hero Video -->
         <div class="cta-box" style="max-width: 1000px; margin: 1.5rem auto;">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <div class="hero-stats">
@@ -795,7 +972,7 @@
 
         <!-- SECTION 1: Introduction & The Stakes -->
         <h2 id="section-1">Section 1: Introduction & The Stakes</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-01-intro.jpg" alt="Person receiving credit alert on phone at night" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-01-intro.jpg" alt="Person receiving credit alert on phone at night" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             Your phone buzzes at 2 AM. It is not your alarm. It is a notification from your credit monitoring app. Someone in another state just tried to open a line of credit in your name. You have never been to that state. You do not know how they got your Social Security number, your mother's maiden name, or the answer to your security question about your first pet. But they did. And now you are awake in the dark, wondering how deep this goes.
@@ -806,14 +983,14 @@
         <p>I will start with three people. Their experiences are documented, verified, and in some cases, still ongoing. I tell you about them not to scare you, though they might. I tell you about them because privacy violations are not abstract. They land on specific humans at specific times. They carry weight that annual data breach statistics can never quite capture.</p>
 
         <h4>Rebecca's Year of Living Dangerously</h4>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/gmail-scanning-1x1.jpg" alt="Personal health data being secretly shared with tech companies" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/gmail-scanning-1x1.jpg" alt="Personal health data being secretly shared with tech companies" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Rebecca Heilweil was 25 in 2021 when she downloaded a period-tracking app called Flo. Millions of women used it. The interface was clean, the predictions were helpful, and the company promised discretion. What Flo did not advertise was that they were sharing users' intimate health data with Facebook and Google. Not in some vague, aggregated way. Specific details about pregnancy attempts, miscarriages, menstrual cycles flowing to data brokers who could connect those dots to Rebecca's identity across the web.</p>
 
         <p>When the Federal Trade Commission investigation became public in 2021, Rebecca learned that her most private biological information had been treated as marketing fuel. She deleted the app, but the data was already out there. Copies exist in servers she will never access, profiles built from her body that she cannot erase. "I felt like my own biology had been weaponized against me," she told Consumer Reports. The FTC fined Flo $200,000. Rebecca got no compensation, no notification of exactly what was shared, and no way to claw it back.</p>
 
         <h4>Matthew's Face Becomes Someone Else's Crime</h4>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facial-recognition-error-1x1.jpg" alt="Innocent person wrongfully matched by facial recognition system" class="story-image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facial-recognition-error-1x1.jpg" alt="Innocent person wrongfully matched by facial recognition system" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Matthew Banta lived in Wisconsin in 2019. He was 30, worked in IT, and had a clean record. Then police showed up at his door with a warrant for his arrest. A facial recognition system had flagged him as a suspect in a theft at a local store. The match came from a grainy security camera photo. The algorithm said Matthew and the thief shared a 98% similarity score.</p>
 
@@ -833,7 +1010,7 @@
         <p>Ahmed had committed no crime. His family had committed no crime. They had simply existed, in a specific place, speaking a specific language, while carrying phones that treated their location as a product to sell. The data broker contracts were legal. The government purchase was legal. Ahmed's ruined career prospects were simply collateral damage in a surveillance economy he never agreed to join.</p>
 
         <h3>The "Nothing to Hide" Fallacy and Why It Breaks</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facebook-shadow-1x1.jpg" alt="Hidden surveillance collecting data on unsuspecting person" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facebook-shadow-1x1.jpg" alt="Hidden surveillance collecting data on unsuspecting person" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>I have heard the argument dozens of times. Usually delivered with a shrug. "I have nothing to hide, so why should I care about privacy?" It sounds reasonable. It feels like common sense. It is also completely wrong, and the stories above show exactly why.</p>
 
@@ -868,18 +1045,19 @@
         <p>That is worth something. For Rebecca, Matthew, Ahmed, and countless others, it might have changed everything.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 2: What Is Privacy Really? -->
         <h2 id="section-2">Section 2: What Is Privacy Really?</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-02-privacy.jpg" alt="Privacy concept - human silhouette protected by digital shield" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-02-privacy.jpg" alt="Privacy concept - human silhouette protected by digital shield" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <h3>The Birth of a Legal Concept: Warren and Brandeis (1890)</h3>
 
@@ -934,7 +1112,7 @@
         <p><strong>Anonymity</strong> is about identity separation--conducting activities without linking them to one's real-world identity. A person can be private without being anonymous (using real names but controlling information dissemination) or anonymous without being private (revealing extensive personal details under a pseudonym).</p>
 
         <h3>The Privacy Paradox</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/google-search-1x1.jpg" alt="Person sharing data online while concerned about privacy" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/google-search-1x1.jpg" alt="Person sharing data online while concerned about privacy" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Study after study shows that people claim to value privacy highly. The 2019 Pew Research Center survey found that 81% of Americans feel they have little control over the data companies collect, and 79% are concerned about how companies use their data. Yet these same people routinely disclose personal information in exchange for minor conveniences, accept lengthy terms of service without reading them, and maintain social media profiles full of personal details.</p>
 
@@ -943,18 +1121,19 @@
         <p>Several factors explain the paradox: <strong>Cognitive load</strong> is significant. Reading privacy policies would take an estimated 244 hours per year for the average internet user. <strong>Present bias</strong> plays a major role: privacy risks are delayed and probabilistic, while protections create immediate friction. <strong>Information asymmetry</strong> compounds the problem: users cannot meaningfully evaluate privacy risks because they lack information about data practices.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 3: The Digital Surveillance Economy -->
         <h2 id="section-3">Section 3: The Digital Surveillance Economy</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-03-surveillance.jpg" alt="Data broker network visualization with anonymous profile" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-03-surveillance.jpg" alt="Data broker network visualization with anonymous profile" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             There's a parallel economy running beneath your daily life. You don't see it. You don't hear it. But it's been watching you for years. While you sleep, while you shop, while you scroll through your phone at 2 AM wondering why you can't fall asleep--someone is taking notes.
@@ -997,11 +1176,11 @@
         <h3>How They Get It: The Harvesting Machine</h3>
 
         <h4>Loyalty Programs: The Trojan Horse</h4>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/cvs-loyalty-1x1.jpg" alt="Loyalty card revealing personal health data to corporations" class="story-image" style="float: left; max-width: 240px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/cvs-loyalty-1x1.jpg" alt="Loyalty card revealing personal health data to corporations" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 240px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>Your CVS ExtraCare card saves you $3 on shampoo. In exchange, CVS gets a complete record of everything you buy: the medications, the personal care products, the occasional pregnancy test. CVS knows your health better than some doctors.</p>
 
         <h4>Credit Cards: The Spending Diary</h4>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/credit-card-tracking-1x1.jpg" alt="Credit card transactions revealing complete purchase history" class="story-image" style="float: right; max-width: 240px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/credit-card-tracking-1x1.jpg" alt="Credit card transactions revealing complete purchase history" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 240px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>Your credit card company knows everything you buy. Every restaurant, every gas station, every online purchase, every medical bill. Visa and Mastercard don't just process payments. They sell aggregated spending data to merchants, advertisers, and data brokers.</p>
 
         <h4>Public Records: The Government as Data Source</h4>
@@ -1011,7 +1190,7 @@
         <p>Every website you visit is probably tracking you. Cookies, pixel tags, fingerprinting scripts--they're everywhere. Facebook's "Like" button on a news article? It tracks you even if you don't click it. Google's advertising network appears on 75% of the top million websites.</p>
 
         <h3>The Target Story</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/target-father-1x1.jpg" alt="Father confronting store manager about pregnancy prediction" class="story-image" style="float: right; max-width: 300px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/target-father-1x1.jpg" alt="Father confronting store manager about pregnancy prediction" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 300px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>In February 2012, a man walked into a Target store in Minneapolis and demanded to see the manager. He was angry. He was holding coupons. Coupons for cribs and baby clothes and diapers, addressed to his teenage daughter.</p>
 
@@ -1026,25 +1205,26 @@
         <p>This wasn't an isolated case. It's the entire business model. Every data broker is trying to predict your behavior before you know it yourself.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 4: Corporate Data Harvesting -->
         <h2 id="section-4">Section 4: Corporate Data Harvesting</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-04-corporate.jpg" alt="Tech company buildings as monolithic structures collecting data" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-04-corporate.jpg" alt="Tech company buildings as monolithic structures collecting data" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             We talk about "Big Tech" like it's some abstract concept. It's not. It's five companies with a combined market cap that exceeds the GDP of most nations, and they know more about your daily life than your closest friends.
         </p>
 
         <h3>Google: The Archive of Human Intent</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/google-search-1x1.jpg" alt="Person searching on computer with data collection visualization" class="story-image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/google-search-1x1.jpg" alt="Person searching on computer with data collection visualization" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Every search query you've typed since 2005. Every YouTube video you've watched, including the ones you cleared from your history. Every location you've visited with an Android phone in your pocket. Google has it.</p>
 
@@ -1056,7 +1236,7 @@
 
         <h3>Meta: The Social Graph of Everything</h3>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facebook-shadow-1x1.jpg" alt="Shadow profile concept showing hidden data collection" class="story-image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/facebook-shadow-1x1.jpg" alt="Shadow profile concept showing hidden data collection" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p><strong>Shadow Profiles:</strong> They maintain profiles on people who have never created Facebook accounts. Your friends uploaded their contact lists. Someone tagged you in a photo. A website with a Facebook pixel recorded your visit. Meta's algorithms stitched these fragments together--building a profile of a person who never consented to any of it.</p>
 
         <p><strong>Off-Facebook Activity:</strong> Meta's "Off-Facebook Activity" tool, launched in 2020, finally offered users a glimpse of this tracking. The typical report is overwhelming. Hundreds of apps. Thousands of data points. Your dating app activity. Your period tracker. Your religious app. All sharing data with Meta.</p>
@@ -1067,7 +1247,7 @@
 
         <p><strong>Purchase History:</strong> Every item you've bought. Every item you almost bought--saved in abandoned carts. Every item you searched for. Amazon tracks 2,000+ data points per user interaction.</p>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/alexa-recording-1x1.jpg" alt="Smart speaker with audio waves showing always-listening" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/alexa-recording-1x1.jpg" alt="Smart speaker with audio waves showing always-listening" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p><strong>Alexa:</strong> Amazon sold over 500 million Alexa-enabled devices. These devices record audio when they detect the wake word--and sometimes when they think they detect it. Amazon employs thousands of workers to listen to and transcribe these recordings. In 2023, Amazon agreed to pay $31 million in fines after the FTC found that Ring had allowed employees unrestricted access to customer videos.</p>
 
         <h3>Apple: Privacy Theater vs. Privacy Reality</h3>
@@ -1088,18 +1268,19 @@
         </ul>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 5: Government Surveillance -->
         <h2 id="section-5">Section 5: Government Surveillance</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-05-government.jpg" alt="Government surveillance headquarters with satellite dishes" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-05-government.jpg" alt="Government surveillance headquarters with satellite dishes" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             In June 2013, a 29-year-old contractor named Edward Snowden boarded a flight to Moscow with four laptops containing classified documents that would forever change how the world understood government surveillance.
@@ -1133,7 +1314,7 @@
         </div>
 
         <h3>The Snowden Revelations: What We Learned</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/snowden-airport-1x1.jpg" alt="Silhouette in airport with surveillance cameras" class="story-image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/snowden-airport-1x1.jpg" alt="Silhouette in airport with surveillance cameras" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 280px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p><strong>PRISM:</strong> A program allowing the National Security Agency to collect communications directly from the servers of nine major technology companies: Microsoft (2007), Yahoo (2008), Google and Facebook (2009), YouTube (2010), Skype and AOL (2011), and Apple (2012).</p>
 
@@ -1159,32 +1340,33 @@
 
         <h3>Facial Recognition: The Biometric Revolution</h3>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/clearview-ai-1x1.jpg" alt="Facial recognition scanning crowd with biometric data overlay" class="story-image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/clearview-ai-1x1.jpg" alt="Facial recognition scanning crowd with biometric data overlay" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p><strong>Clearview AI</strong> built a database of over 50 billion facial images scraped from public websites without consent. By 2023, Clearview AI reported over 3,100 law enforcement agency customers across 32 countries.</p>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/williams-arrest-1x1.jpg" alt="Person wrongfully identified by facial recognition technology" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/williams-arrest-1x1.jpg" alt="Person wrongfully identified by facial recognition technology" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>Accuracy remains contested. The NIST Face Recognition Vendor Test 2019 found that false positive rates were 10 to 100 times higher for African American and Asian faces compared to Caucasian faces in many algorithms. The Robert Williams case in Detroit (January 2020) demonstrated these failures: Williams was arrested on his front lawn after facial recognition software incorrectly matched him to shoplifting surveillance footage.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 6: Privacy in the Age of AI -->
         <h2 id="section-6">Section 6: Privacy in the Age of AI</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-06-ai.jpg" alt="AI neural network analyzing human face with biometric data" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-06-ai.jpg" alt="AI neural network analyzing human face with biometric data" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             Machine learning has transformed the privacy landscape in ways that were difficult to anticipate even a decade ago. The systems we've built can find patterns in billions of data points, generate convincing human-like content, and make predictions about individual behavior.
         </p>
 
         <h3>Training Data: The Consent Crisis</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/ai-training-data-1x1.jpg" alt="AI system consuming personal data from multiple sources" class="story-image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/ai-training-data-1x1.jpg" alt="AI system consuming personal data from multiple sources" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 280px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Every large language model, image generator, and recommendation system depends on training data--massive collections of text, images, audio, and behavioral logs. GPT-4, Claude, and similar models were trained on hundreds of billions of words scraped from the internet. Image models like DALL-E 3, Midjourney, and Stable Diffusion learned from billions of images, many scraped from photo-sharing sites, artist portfolios, and personal blogs.</p>
 
@@ -1205,7 +1387,7 @@
         <p>Clearview AI built its database by scraping billions of photos from social media platforms without users' knowledge or consent. The company claims its database contains over 30 billion images. A stranger who photographs you at a protest, a bar, or a medical clinic could potentially identify you, find your social media profiles, and learn where you work and live.</p>
 
         <h3>Voice Cloning: Three Seconds Is Enough</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/voice-cloning-fraud-1x1.jpg" alt="Voice waveform being analyzed and replicated by AI" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/voice-cloning-fraud-1x1.jpg" alt="Voice waveform being analyzed and replicated by AI" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Modern voice cloning systems can generate convincing replicas of a person's voice from remarkably small samples--sometimes as little as three seconds of audio. In 2019, criminals used voice cloning to impersonate a CEO's voice in a $243,000 fraud scheme.</p>
 
@@ -1216,18 +1398,19 @@
         <p>Modern systems integrate data from multiple sources--purchase history, browsing behavior, location data, social media activity, credit reports--to build comprehensive models of individual behavior. Health insurers use predictive models to identify customers who may develop expensive conditions. Employers use algorithms to predict which workers are likely to quit. Law enforcement agencies use "predictive policing" systems to forecast where crimes will occur.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 7: The Internet of Things -->
         <h2 id="section-7">Section 7: The Internet of Things</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-07-iot.jpg" alt="Smart home devices connected by data streams" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-07-iot.jpg" alt="Smart home devices connected by data streams" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             I remember the first time I unboxed an Amazon Echo. There was something almost magical about saying "Alexa, play some jazz" and having music fill the room. What I didn't spend that hour doing? Reading the 15,000-word privacy policy that essentially gave Amazon permission to record everything within earshot.
@@ -1239,11 +1422,11 @@
 
         <p>Smart speakers use "wake word" detection to listen for their activation phrase. But to detect "Alexa" or "Hey Google," the microphone must be actively processing everything it hears. The device isn't recording and transmitting constantly--technically. Instead, it's in a state of perpetual listening, analyzing sound waves for patterns that match the wake word.</p>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/portland-echo-1x1.jpg" alt="Smart speaker accidentally recording private conversation" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/portland-echo-1x1.jpg" alt="Smart speaker accidentally recording private conversation" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>In 2018, a woman in Portland discovered her Echo had recorded a private conversation and sent it to one of her husband's employees. Amazon employs thousands of contractors to listen to Alexa recordings--ostensibly to improve accuracy. These workers have access to audio clips containing intimate conversations, arguments, sexual encounters, and criminal activity.</p>
 
         <h3>The Screen That Watches Back: Smart TVs</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/smart-tv-watching-1x1.jpg" alt="Smart TV with eyes and surveillance watching family" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/smart-tv-watching-1x1.jpg" alt="Smart TV with eyes and surveillance watching family" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Modern televisions are computers with displays attached. They run operating systems, connect to WiFi, download apps, and--critically--collect data about everything you watch. This is called Automatic Content Recognition (ACR), and it's standard on virtually every smart TV sold today.</p>
 
@@ -1255,11 +1438,11 @@
 
         <p>Apple has sold over 100 million Apple Watches. Fitbit (now owned by Google) has sold more than 120 million devices. This data is intimate in ways we rarely consider. Your heart rate variability can indicate anxiety, depression, or cardiovascular issues. Your sleep patterns reveal work stress, relationship problems, or substance use.</p>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/strava-military-1x1.jpg" alt="Fitness tracker heat map revealing military base locations" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/strava-military-1x1.jpg" alt="Fitness tracker heat map revealing military base locations" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>In 2018, Strava published a "heat map" showing aggregated user activity around the world. The map also revealed the locations of secret military bases in Afghanistan, Syria, and Somalia. Soldiers wearing fitness trackers had inadvertently mapped sensitive installations simply by jogging around their compounds.</p>
 
         <h3>Connected Cars: Four-Wheel Surveillance</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/connected-car-1x1.jpg" alt="Modern car with data streams showing surveillance capabilities" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/connected-car-1x1.jpg" alt="Modern car with data streams showing surveillance capabilities" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Modern vehicles are computers on wheels, generating and transmitting vast quantities of data. A typical new car contains 100+ microprocessors, multiple cellular connections, and increasingly sophisticated sensors tracking everything from engine performance to driver behavior.</p>
 
@@ -1268,25 +1451,26 @@
         <p>The 2023 Mozilla Foundation study of car privacy ranked automotive as the worst product category for privacy. Every major manufacturer received failing grades.</p>
 
         <h3>The Mirai Botnet: When IoT Attacks</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/mirai-botnet-1x1.jpg" alt="Network of compromised IoT devices in botnet attack" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/mirai-botnet-1x1.jpg" alt="Network of compromised IoT devices in botnet attack" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>In October 2016, a massive DDoS attack took down major internet services including Twitter, Netflix, Reddit, and CNN. The attack traffic--reaching 1.2 terabits per second--came from compromised security cameras, DVRs, and baby monitors. At its peak, Mirai controlled over 600,000 devices.</p>
 
         <p>Most IoT devices have terrible security: default passwords that can't be changed, unencrypted communications, no automatic update mechanisms. When your insecure baby monitor becomes part of a botnet attacking hospitals, your device has become a public health hazard.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 8: Social Media Oversharing -->
         <h2 id="section-8">Section 8: Social Media Oversharing</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-08-social.jpg" alt="Person surrounded by social media icons with data leaking" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-08-social.jpg" alt="Person surrounded by social media icons with data leaking" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             We all know the feeling. The vacation photo that absolutely must be posted. The witty observation that demands an audience. The moment of vulnerability that somehow migrates from private thought to public post. The question isn't whether this happens--it's why, despite knowing better, we keep doing it.
@@ -1311,31 +1495,32 @@
         <p>When you delete a social media post, you're typically only removing the public-facing reference. The underlying data--stored in databases, backed up to disaster recovery systems, logged in analytics pipelines--often remains intact. Screenshots represent another permanence vector that no deletion policy can address.</p>
 
         <h3>Employment Screening: The Resume You Never Submitted</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/employment-social-1x1.jpg" alt="HR manager reviewing candidate social media profiles" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/employment-social-1x1.jpg" alt="HR manager reviewing candidate social media profiles" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Seventy percent of employers check social media during hiring processes. Companies like Fama and Checkr offer AI-powered social media background checks that scan candidates' accounts for "toxic behavior" or content that might "damage brand reputation."</p>
 
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/harvard-admissions-1x1.jpg" alt="College admissions officer reviewing social media posts" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/harvard-admissions-1x1.jpg" alt="College admissions officer reviewing social media posts" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
         <p>In 2017, Harvard College rescinded admissions offers to at least ten incoming freshmen after discovering they had shared offensive memes in a private Facebook group. The students had considered the group private and anonymous; Harvard's admissions office considered it relevant to character assessment.</p>
 
         <h3>Insurance and Social Media: Claims Denied Based on Posts</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/quebec-disability-1x1.jpg" alt="Insurance investigator monitoring social media for disability fraud" class="story-image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/quebec-disability-1x1.jpg" alt="Insurance investigator monitoring social media for disability fraud" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: left; max-width: 260px; margin: 0 1.5rem 1rem 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>Insurance companies have been monitoring claimants' social media for over a decade. In 2011, a Quebec woman had her disability benefits terminated after her insurance company discovered Facebook photos showing her at a bar and on vacation. The woman suffered from depression; her insurer argued that social activity demonstrated she was not disabled.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 9: Identity Theft & Financial Privacy -->
         <h2 id="section-9">Section 9: Identity Theft & Financial Privacy</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-09-identity.jpg" alt="Hacker at computer with stolen data on screens" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-09-identity.jpg" alt="Hacker at computer with stolen data on screens" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             In 2020, identity theft touched nearly 49 million Americans--roughly one in every seven adults in the United States. The financial damage was staggering: $56 billion in losses.
@@ -1381,18 +1566,19 @@
         <p>Privacy coins like Monero, Zcash, and Dash attempt to solve this through cryptographic techniques that obscure transaction details. However, several major exchanges have delisted privacy coins due to concerns about money laundering.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 10: Privacy Tools & Practical Defense -->
         <h2 id="section-10">Section 10: Privacy Tools & Practical Defense</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-10-tools.jpg" alt="Digital privacy tools as glowing shield icons protecting laptop" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-10-tools.jpg" alt="Digital privacy tools as glowing shield icons protecting laptop" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             You've made it this far. You understand the surveillance economy. Now comes the part everyone asks: What do I actually do about it? This section isn't about achieving perfect privacy--that's a fantasy. It's about making surveillance harder, more expensive, and less comprehensive.
@@ -1464,18 +1650,19 @@
         <p><strong>Email Forwarding (SimpleLogin, AnonAddy):</strong> Create unlimited aliases that forward to your real inbox. When a service leaks your email, you know who did it.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 11: Health & Medical Privacy -->
         <h2 id="section-11">Section 11: Health & Medical Privacy</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-11-health.jpg" alt="Health data flowing between hospital and insurance company" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-11-health.jpg" alt="Health data flowing between hospital and insurance company" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             You'd never post your medical records on social media. Yet every day, companies you've never heard of are buying, selling, and trading details about your prescriptions, your DNA, your mental health struggles, and your fertility patterns.
@@ -1512,18 +1699,19 @@
         <p>Insurance companies increasingly demand access to wearable data in exchange for premium discounts. If your tracker shows irregular heart rhythms, does your insurer know? If your sleep quality suggests depression, could that affect your coverage?</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 12: Workplace Privacy -->
         <h2 id="section-12">Section 12: Workplace Privacy</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-12-workplace.jpg" alt="Office worker being watched by surveillance cameras and monitoring software" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-12-workplace.jpg" alt="Office worker being watched by surveillance cameras and monitoring software" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             Your employer is watching you work. Not metaphorically. Actually watching. Recording. Logging every keystroke, screenshot, and bathroom break. The modern workplace has become a panopticon of granular surveillance, and most employees have no idea how deep the monitoring goes.
@@ -1560,25 +1748,26 @@
         <p>The National Labor Relations Board found that Amazon illegally surveilled and threatened workers during the Bessemer union drive, but the company faced no meaningful penalties.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 13: Children's Privacy -->
         <h2 id="section-13">Section 13: Children's Privacy</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-13-children.jpg" alt="Child using tablet while data collection icons float away" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-13-children.jpg" alt="Child using tablet while data collection icons float away" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             Before a child takes their first steps, before they can form memories, their digital identity already exists. A 2020 study found that the average child has 1,500 photos of them posted online before their fifth birthday--roughly one photo every day of their life.
         </p>
 
         <h3>The First Digital Footprint</h3>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/sharenting-danger-1x1.jpg" alt="Parent photographing child while digital data streams away" class="story-image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/story/sharenting-danger-1x1.jpg" alt="Parent photographing child while digital data streams away" class="story-image" loading="lazy" decoding="async" itemprop="image" style="float: right; max-width: 260px; margin: 0 0 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 
         <p>This is the reality of "sharenting," the practice of parents sharing information about their children on social media. By age thirteen, when most platforms allow children to create their own accounts, their parents have already constructed a digital identity for them--one they had no role in shaping and cannot control.</p>
 
@@ -1609,18 +1798,19 @@
         <p>Clearview AI has scraped billions of photos from social media, including extensive images of children. The company's database allows law enforcement to identify individuals from photos--including children who have no criminal record, no reason to be in a police database, yet whose faces are searchable because their parents posted photos online.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
 
         <!-- SECTION 14: Global Privacy Laws -->
         <h2 id="section-14">Section 14: Global Privacy Laws</h2>
-        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-14-laws.jpg" alt="World map showing different privacy law regions like GDPR and CCPA" class="section-image">
+        <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/section-14-laws.jpg" alt="World map showing different privacy law regions like GDPR and CCPA" class="section-image" loading="lazy" decoding="async" width="1200" height="630" itemprop="image">
 
         <p class="opening-hook">
             When the European Union's General Data Protection Regulation took effect in May 2018, it didn't just change how companies handled data--it forced a global conversation about privacy rights that had been largely theoretical.
@@ -1716,11 +1906,12 @@
         <p>The patchwork of global privacy laws represents an ongoing experiment in regulating data in a borderless digital economy. What remains clear is that privacy law will continue evolving--and the fundamental tension between data-driven business models and individual privacy rights will remain unresolved.</p>
 
         <div class="cta-box">
+            <img src="https://raw.githubusercontent.com/AiMagic5000/cpn-privacy-article-assets/main/images/credit-guide-cta.png" alt="Credit Privacy Guide - Case Study: I Got A Legal New Credit File via the 1974 Privacy Act Law" title="Download Free Credit Privacy Guide" class="cta-box-image" loading="lazy" width="140" height="180">
             <div class="cta-box-content">
                 <p>Interested in a Credit Privacy File registered with the IRS? Get legal standing in commerce that's completely separate from your SSN credit profile.</p>
                 <p class="cta-highlight">Download Your Free Guide</p>
             </div>
-            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener">Download Free Guide</a>
+            <a href="https://linkly.link/1z2nk" class="cta-button" target="_blank" rel="noopener" title="Download Free Credit Privacy Guide PDF">Download Free Guide</a>
         </div>
 
         <hr>
